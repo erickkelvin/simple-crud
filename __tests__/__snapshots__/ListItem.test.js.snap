@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem test render 1`] = `
+"
+      <div id='userid123' class='listItem'>
+        <div class='listItemContent'>
+          <div>
+            <strong>Nome:</strong> name
+          </div>
+          <div>
+            <strong>E-mail:</strong> email@test.com
+          </div>
+          <div>
+            <strong>CPF:</strong> 123.456.789-12
+          </div>
+          <div>
+            <strong>Telefone:</strong> (12) 34567-8901
+          </div>
+        </div>
+        <div class='listItemActions'>
+          
+      <button id='editid123Button'>Editar</button>
+    
+          
+      <button id='deleteid123Button'>Excluir</button>
+    
+        </div>
+        
+      </div>
+    "
+`;

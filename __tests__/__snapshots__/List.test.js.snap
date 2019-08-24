@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List test render 1`] = `
+"
+      <div id='listContainer' class= 'pageContainer'>
+        <h3>Usuários</h3>
+        
+      <button id='newButton'>Cadastrar</button>
+    
+        <div id='usersList'></div>
+      </div>
+    "
+`;

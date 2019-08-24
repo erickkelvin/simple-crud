@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spinner test render 1`] = `
+"
+      <div class='spinner'><div></div><div></div><div></div><div></div></div>
+    "
+`;

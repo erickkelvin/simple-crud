@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form test render form edit 1`] = `
+"
+      <div id='formContainer' class= 'pageContainer'>
+        <h3>Atualizar usuário</h3>
+        
+      <button id='listButton'>Ver todos</button>
+    
+        <form id='userForm'>
+          
+      <div id='nameField' class='field'>
+        <label for='nameInput'>
+          Nome completo (sem abreviações)
+        </label>
+        <input 
+          type='text'
+          
+          id='nameInput'
+          name='nameInput'
+        />
+        <div id='nameError' class='fieldError'></div>
+      </div>
+    
+      <div id='emailField' class='field'>
+        <label for='emailInput'>
+          E-mail
+        </label>
+        <input 
+          type='email'
+          
+          id='emailInput'
+          name='emailInput'
+        />
+        <div id='emailError' class='fieldError'></div>
+      </div>
+    
+      <div id='cpfField' class='field'>
+        <label for='cpfInput'>
+          CPF
+        </label>
+        <input 
+          type='text'
+          maxlength='14'
+          id='cpfInput'
+          name='cpfInput'
+        />
+        <div id='cpfError' class='fieldError'></div>
+      </div>
+    
+      <div id='phoneField' class='field'>
+        <label for='phoneInput'>
+          Telefone
+        </label>
+        <input 
+          type='phone'
+          maxlength='15'
+          id='phoneInput'
+          name='phoneInput'
+        />
+        <div id='phoneError' class='fieldError'></div>
+      </div>
+    
+          
+      <button id='saveButton'>Atualizar</button>
+    
+        </form>
+      </div>
+    "
+`;
+
+exports[`Form test render form new 1`] = `
+"
+      <div id='formContainer' class= 'pageContainer'>
+        <h3>Cadastrar usuário</h3>
+        
+      <button id='listButton'>Ver todos</button>
+    
+        <form id='userForm'>
+          
+      <div id='nameField' class='field'>
+        <label for='nameInput'>
+          Nome completo (sem abreviações)
+        </label>
+        <input 
+          type='text'
+          
+          id='nameInput'
+          name='nameInput'
+        />
+        <div id='nameError' class='fieldError'></div>
+      </div>
+    
+      <div id='emailField' class='field'>
+        <label for='emailInput'>
+          E-mail
+        </label>
+        <input 
+          type='email'
+          
+          id='emailInput'
+          name='emailInput'
+        />
+        <div id='emailError' class='fieldError'></div>
+      </div>
+    
+      <div id='cpfField' class='field'>
+        <label for='cpfInput'>
+          CPF
+        </label>
+        <input 
+          type='text'
+          maxlength='14'
+          id='cpfInput'
+          name='cpfInput'
+        />
+        <div id='cpfError' class='fieldError'></div>
+      </div>
+    
+      <div id='phoneField' class='field'>
+        <label for='phoneInput'>
+          Telefone
+        </label>
+        <input 
+          type='phone'
+          maxlength='15'
+          id='phoneInput'
+          name='phoneInput'
+        />
+        <div id='phoneError' class='fieldError'></div>
+      </div>
+    
+          
+      <button id='saveButton'>Cadastrar</button>
+    
+        </form>
+      </div>
+    "
+`;

@@ -2,11 +2,10 @@ import './Field.styl';
 
 export default class Field {
 
-  constructor({ name, type, label, value, maxLength, validate }) {
+  constructor({ name, type, label, maxLength, validate }) {
     this.name = name;
     this.type = type;
     this.label = label;
-    this.value = value;
     this.maxLength = maxLength;
     this.validate = validate;
     this.isValid = false;

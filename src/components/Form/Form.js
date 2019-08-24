@@ -60,14 +60,12 @@ export default class Form {
         name: 'name',
         type: 'text',
         label: 'Nome completo (sem abreviações)',
-        value: '',
         validate: (value) => value.length < 3 ? 'O campo deve conter 3 caracteres ou mais' : ''
       }),
       new Field({
         name: 'email',
         type: 'email',
         label: 'E-mail',
-        value: '',
         validate: (value) => !/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(value) ? 'O campo deve conter um e-mail válido' : ''
       }),
       new Field({
@@ -75,7 +73,6 @@ export default class Form {
         type: 'text',
         label: 'CPF',
         maxLength: 14,
-        value: '',
         validate: (value) => value.length < 14 ? 'O campo deve conter um CPF válido' : ''
       }),
       new Field({
@@ -83,7 +80,6 @@ export default class Form {
         type: 'phone',
         label: 'Telefone',
         maxLength: 15,
-        value: '',
         validate: (value) => value.length < 15 ? 'O campo deve conter um telefone válido' : ''
       })
     ];

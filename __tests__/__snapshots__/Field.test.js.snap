@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Field test render 1`] = `
+"
+      <div id='nameField' class='field'>
+        <label for='nameInput'>
+          label
+        </label>
+        <input 
+          type='type'
+          maxlength='10'
+          id='nameInput'
+          name='nameInput'
+        />
+        <div id='nameError' class='fieldError'></div>
+      </div>
+    "
+`;
