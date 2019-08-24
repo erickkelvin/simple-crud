@@ -1,0 +1,16 @@
+div#formContainer
+  width: 300px
+
+  #listButton
+    float: right
+
+  form#userForm
+    #saveButton
+      margin-top: 30px
+      width: 100%
+
+    &:not(.ready)
+      #saveButton
+        background: #f6f6f6;
+        color: #dddcdc;
+        pointer-events: none

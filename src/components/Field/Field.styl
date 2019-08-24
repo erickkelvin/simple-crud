@@ -1,0 +1,30 @@
+.field
+  width: 100%
+  margin-top: 30px
+
+  label
+    color: #aaa
+    font-size: 12px
+
+  input
+    display: block
+    border: none
+    border-bottom: 1px solid #bbb
+    padding: 5px 5px 5px 2px
+    width: calc(100% - 7px)
+    outline: none
+    color: #333
+    
+    &:focus
+      border-bottom: 1px solid #333
+
+    &.error
+      border-bottom: 1px solid #eb4a46
+
+  .fieldError
+    display: block
+    font-size: 12px
+    color: #eb4a46
+
+    &:empty
+      display: none
