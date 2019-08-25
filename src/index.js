@@ -1,5 +1,5 @@
 import { Form, List, NotFound } from 'components';
-import { Users } from './store';
+import { Users } from 'store';
 import './index.styl';
 
 const routes = {

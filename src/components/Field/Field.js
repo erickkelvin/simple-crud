@@ -29,28 +29,28 @@ export default class Field {
 
   filterInput(e) {
     const phoneMask = (v) => {
-      let r = v.replace(/\D/g,"");
-      r = r.replace(/^0/,"");
+      let r = v.replace(/\D/g, '');
+      r = r.replace(/^0/, '');
       if (r.length > 7) {
-        r = r.replace(/^(\d{2})(\d{5})(\d{0,4}).*/,"($1) $2-$3")
+        r = r.replace(/^(\d{2})(\d{5})(\d{0,4}).*/, '($1) $2-$3')
       } else if (r.length > 2) {
-        r = r.replace(/^(\d{2})(\d{0,5})/,"($1) $2");
+        r = r.replace(/^(\d{2})(\d{0,5})/, '($1) $2');
       } else {
-        r = r.replace(/^(\d*)/, "($1");
+        r = r.replace(/^(\d*)/, '($1');
       }
       return r;
     };
 
     const cpfMask = (v) => {
-      let r = v.replace(/\D/g,"");
+      let r = v.replace(/\D/g, '');
       if (r.length > 9) {
-        r = r.replace(/^(\d{3})(\d{3})(\d{3})(\d{0,1})/,"$1.$2.$3-$4")
+        r = r.replace(/^(\d{3})(\d{3})(\d{3})(\d{0,1})/, '$1.$2.$3-$4')
       } else if (r.length > 6) {
-        r = r.replace(/^(\d{3})(\d{3})(\d{0,3})/,"$1.$2.$3")
+        r = r.replace(/^(\d{3})(\d{3})(\d{0,3})/, '$1.$2.$3')
       } else if (r.length > 3) {
-        r = r.replace(/^(\d{3})(\d{0,3})/,"$1.$2");
+        r = r.replace(/^(\d{3})(\d{0,3})/, '$1.$2');
       } else {
-        r = r.replace(/^(\d{3})/, "$1");
+        r = r.replace(/^(\d{3})/, '$1');
       }
       return r;
     };

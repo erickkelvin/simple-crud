@@ -7,6 +7,12 @@ export default class List {
   constructor(store) {
     this.store = store;
     this.users = {};
+    
+    this.newButton = new Button({
+      name: 'new',
+      label: 'Cadastrar',
+      onClick: () => window.location.href = '#/new'
+    });
   }
 
   getUsers() {
@@ -33,12 +39,6 @@ export default class List {
   }
 
   render() {
-    this.newButton = new Button({
-      name: 'new',
-      label: 'Cadastrar',
-      onClick: () => window.location.href = '#/new'
-    });
-
     return `
       <div id='listContainer' class= 'pageContainer'>
         <h3>Usuários</h3>

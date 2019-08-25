@@ -11,9 +11,7 @@ export default class ListItem {
     this.email = email;
     this.cpf = cpf;
     this.phone = phone;
-  }
 
-  render() {
     this.editButton = new Button({
       name: `edit${this.id}`,
       label: 'Editar',
@@ -23,9 +21,14 @@ export default class ListItem {
     this.deleteButton = new Button({
       name: `delete${this.id}`,
       label: 'Excluir',
-      onClick: () => { this.store.deleteUser(this.id); this.list.getUsers(); }
+      onClick: () => {
+        this.store.deleteUser(this.id);
+        this.list.getUsers();
+      }
     });
+  }
 
+  render() {
     return `
       <div id='user${this.id}' class='listItem'>
         <div class='listItemContent'>

@@ -4,6 +4,11 @@ export default class Users {
     this.users = {};
   }
 
+  clear() {
+    this.users = {};
+    localStorage.removeItem('users');
+  }
+
   fetchInitialState(successCallback, errorCallback) {
     if (localStorage.getItem('users') === null) {
       fetch('https://private-21e8de-rafaellucio.apiary-mock.com/users')
@@ -30,10 +35,8 @@ export default class Users {
         }
         console.log('Could not fetch initial state: ' + error.message);
       });
-    } else {
-      if (successCallback) {
-        successCallback(this.getUsers());
-      }
+    } else if (successCallback) {
+      successCallback(this.getUsers());
     }
   }
 
@@ -42,7 +45,8 @@ export default class Users {
     return this.users;
   }
 
-  setUsers() {
+  setUsers(users) {
+    this.users = users || this.users;
     localStorage.setItem('users', JSON.stringify(this.users));
   }
 
@@ -58,6 +62,7 @@ export default class Users {
     userData.phone = userData.phone.replace(/^(\d{2})(\d{5})(\d{0,4}).*/,"($1) $2-$3");
     this.users[userData.id] = userData;
     this.setUsers();
+    return userData.id;
   }
 
   updateUser(userId, userData) {
