@@ -38,7 +38,8 @@
     },
     "moduleNameMapper": {
       "\\.(styl)$": "<rootDir>/__tests__/__mocks__/styleMock.js",
-      "^components(.*)$": "<rootDir>/src/components$1"
+      "^components(.*)$": "<rootDir>/src/components$1",
+      "^store(.*)$": "<rootDir>/src/store$1"
     }
   }
 }

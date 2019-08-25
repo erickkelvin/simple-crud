@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NotFound test render 1`] = `
+exports[`NotFound render 1`] = `
 "
       <div id='notFoundContainer' class='pageContainer'>
         <h3>Erro 404</h3>

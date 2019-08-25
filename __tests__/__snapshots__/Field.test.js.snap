@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Field test render 1`] = `
+exports[`Field render 1`] = `
 "
       <div id='nameField' class='field'>
         <label for='nameInput'>

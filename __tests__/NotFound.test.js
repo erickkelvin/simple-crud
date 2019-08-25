@@ -1,6 +1,6 @@
 import { NotFound } from 'components';
 
-describe('NotFound test', () => {
+describe('NotFound', () => {
   const notFound = new NotFound();
 
   it('render', () => {

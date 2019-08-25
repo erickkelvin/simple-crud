@@ -1,6 +1,6 @@
 import { Spinner } from 'components';
 
-describe('Spinner test', () => {
+describe('Spinner', () => {
   const spinner = new Spinner();
 
   it('render', () => {

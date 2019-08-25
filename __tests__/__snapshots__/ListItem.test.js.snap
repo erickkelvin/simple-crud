@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ListItem test render 1`] = `
+exports[`ListItem render 1`] = `
 "
       <div id='userid123' class='listItem'>
         <div class='listItemContent'>

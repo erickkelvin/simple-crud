@@ -1,6 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button test render 1`] = `
+exports[`Button postRender 1`] = `
+<button
+  id="nameButton"
+  style="pointer-events: none;"
+>
+  
+      
+  <div
+    class="spinner"
+  >
+    <div />
+    <div />
+    <div />
+    <div />
+  </div>
+  
+    
+</button>
+`;
+
+exports[`Button render 1`] = `
 "
       <button id='nameButton'>label</button>
     "

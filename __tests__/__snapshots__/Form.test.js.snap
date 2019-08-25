@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Form test render form edit 1`] = `
+exports[`Form render form edit 1`] = `
 "
       <div id='formContainer' class= 'pageContainer'>
         <h3>Atualizar usuário</h3>
@@ -69,7 +69,7 @@ exports[`Form test render form edit 1`] = `
     "
 `;
 
-exports[`Form test render form new 1`] = `
+exports[`Form render form new 1`] = `
 "
       <div id='formContainer' class= 'pageContainer'>
         <h3>Cadastrar usuário</h3>
