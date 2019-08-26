@@ -7,7 +7,7 @@
     "start": "webpack-dev-server",
     "build": "webpack",
     "watch": "webpack --watch",
-    "test": "jest"
+    "test": "jest && codecov"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,7 @@
     "@babel/preset-env": "^7.5.5",
     "@types/jest": "^24.0.18",
     "babel-jest": "^24.9.0",
+    "codecov": "^3.5.0",
     "copy-webpack-plugin": "^5.0.4",
     "css-loader": "^3.2.0",
     "jest": "^24.9.0",
@@ -40,6 +41,7 @@
       "\\.(styl)$": "<rootDir>/__tests__/__mocks__/styleMock.js",
       "^components(.*)$": "<rootDir>/src/components$1",
       "^store(.*)$": "<rootDir>/src/store$1"
-    }
+    },
+    "collectCoverage": true
   }
 }
