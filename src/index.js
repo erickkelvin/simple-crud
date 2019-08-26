@@ -17,7 +17,7 @@ const renderApp = () => {
   }
   const path = window.location.hash.split('/');
   const route = routes[path[1] || 'index']  || routes['404'];
-  const page = new route(store, path[2]);
+  const page = new route(store, path[1] === 'edit' && path[2]);
   document.getElementById('root').innerHTML = page.render();
   page.postRender && page.postRender();
 };
