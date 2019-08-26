@@ -17,7 +17,7 @@ export default class List {
   getUsers() {
     const usersList = document.getElementById('usersList');
     if (usersList) {
-      usersList.innerHTML = 'Carregando...';
+      usersList.innerHTML = new Spinner().render();
 
       const successCallback = (users) => {
         this.listItems = Object.keys(users).map((userId) => new ListItem(this.store, this, users[userId]));
