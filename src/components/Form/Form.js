@@ -44,7 +44,7 @@ export default class Form {
     this.saveButton = new Button({
       name: 'save',
       label: this.id ? 'Atualizar' : 'Cadastrar',
-      onClick: (e) => setTimeout(() => this.saveForm(e), 1000)
+      onClick: (e) => setTimeout(() => this.saveForm(e), 1000) // setTimeout only necessary to allow user to see the loading spinner
     });
 
     this.listButton = new Button({
