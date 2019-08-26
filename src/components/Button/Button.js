@@ -1,5 +1,5 @@
+import { Spinner } from 'components';
 import './Button.styl';
-import Spinner from '../Spinner/Spinner.js';
 
 export default class Button {
 

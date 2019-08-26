@@ -1,5 +1,5 @@
+import { Button } from 'components';
 import './ListItem.styl';
-import Button from '../Button/Button.js'
 
 export default class ListItem {
 

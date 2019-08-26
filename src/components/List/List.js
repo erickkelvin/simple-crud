@@ -1,5 +1,4 @@
-import ListItem from "../ListItem/ListItem.js";
-import Button from "../Button/Button.js";
+import { ListItem, Spinner, Button} from 'components';
 import './List.styl';
 
 export default class List {
